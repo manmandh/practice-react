@@ -10,8 +10,13 @@ module.exports = {
 				'primary-500': ['Inter-500'],
 				'primary-400': ['Inter-400'],
 			},
+      colors: {
+        'primary': '#000',
+        'secondary': '#262626',
+        'infor' : '#3897F0',
+        'bgc-banner': '#E7FAFE',
+      }
     },
-
   },
   plugins: [],
 }
