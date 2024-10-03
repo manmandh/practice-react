@@ -4,11 +4,11 @@ import facebook from '~/assets/icons/facebook.svg';
 import twitter from '~/assets/icons/twitter.svg';
 import instagram from '~/assets/icons/instagram.svg';
 import { Link} from 'react-router-dom';
-import { NavLinkProps } from '~/commons/interfaces/navLinkProps';
+import { INavLinkProps } from '~/commons/interfaces/INavLinkProps';
 
 
 
-const NavLink: React.FC<NavLinkProps> = ({ href, label }) => {
+const NavLink: React.FC<INavLinkProps> = ({ href, label }) => {
   return (
     <li>
       <Link to={href} className="text-primary hover:text-blue-600 px-3 py-2 rounded-md">

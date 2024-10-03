@@ -15,8 +15,12 @@ module.exports = {
         'secondary': '#262626',
         'infor' : '#3897F0',
         'bgc-banner': '#E7FAFE',
+        'transparent-blue': 'rgba(231, 249, 253, 0)',
+        'light-blue': '#E7F9FD',
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 }

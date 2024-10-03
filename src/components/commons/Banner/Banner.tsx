@@ -33,19 +33,19 @@ export const Banner = () => {
               </div>
             </div>
             <div className="flex items-center justify-between pt-[84px]">
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-1 ">
                 <img src={johnSmith} alt="John Smith" className="w-10 h-10 rounded-full" />
-                <div>
+                <div className=''>
                   <p className="text-sm text-primary">John Smith</p>
                   <p className="text-xs opacity-60">15 March 2022</p>
                 </div>
               </div>
-              <div className="flex items-center space-x-2">
-                <button className="bg-primary text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-gray-700">
-                  View Recipes
-                </button>
+
+              <button className="gap-2 flex items-center space-x-2  bg-primary text-white  rounded-[16px] px-[37px] py-[22px] hover:bg-blue-600 focus:outline-none">
+                View Recipes
                 <img src={circle} alt="circle icon" className="w-5 h-5" />
-              </div>
+              </button>
+
             </div>
           </div>
           <div className="lg:w-1/2 flex justify-end mt-6 lg:mt-0">
