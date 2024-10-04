@@ -17,7 +17,14 @@ module.exports = {
         'bgc-banner': '#E7FAFE',
         'transparent-blue': 'rgba(231, 249, 253, 0)',
         'light-blue': '#E7F9FD',
-      }
+        'bgc-opacity': 'rgba(0, 0, 0, 0.05)',
+      },
+      screens: {
+        'custom-900': '900px',
+        'custom-940': '940px',
+        'custom-440': '440px',
+        'custom-500': '500px',
+      },
     },
   },
   plugins: [

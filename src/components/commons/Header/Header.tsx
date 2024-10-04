@@ -11,7 +11,7 @@ import { INavLinkProps } from '~/commons/interfaces/INavLinkProps';
 const NavLink: React.FC<INavLinkProps> = ({ href, label }) => {
   return (
     <li>
-      <Link to={href} className="text-primary hover:text-blue-600 px-3 py-2 rounded-md">
+      <Link to={href} className="text-primary hover:text-blue-600 px-3 max-custom-940:px-0 py-2 rounded-md ">
         {label}
       </Link>
     </li>
@@ -38,12 +38,12 @@ const socialMediaIcons = [facebook, twitter, instagram];
 
 export const Header = () => {
   return (
-    <header className="flex justify-between items-center pt-[45px] pb-[85px] px-8 bg-white font-primary-500">
+    <header className="flex text-[16px] justify-between max-custom-940:flex-col max-custom-940:gap-4  max-custom-900:py-7 pt-[45px] pb-[75px] px-8 bg-white font-primary-500">
       <div className="flex-shrink-0">
         <img src={logo} alt="logo" className="h-15 w-15" />
       </div>
       <nav className="space-x-4">
-        <ul className='flex'>
+        <ul className='flex gap-[50px] max-custom-940:gap-8 max-custom-440:flex-col max-custom-440:gap-2' >
           {navigationLinks.map((link) => (
             <NavLink key={link.href} href={link.href} label={link.label} />
           ))}
