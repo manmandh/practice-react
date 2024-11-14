@@ -18,9 +18,7 @@ export const Category = () => {
       </div>
       <div className='grid grid-cols-2 max-custom-500:grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-10'>
         {images.map((image, index)=>(
-          <div key={index}>
-            <img src={image} alt={`category-${index}`} />
-          </div>
+          <img key={index} src={image} alt={`category-${index}`} />
         ))}
       </div>
     </div>

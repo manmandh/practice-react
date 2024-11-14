@@ -24,6 +24,10 @@ module.exports = {
         'custom-940': '940px',
         'custom-440': '440px',
         'custom-500': '500px',
+        'custom-530': '530px',
+      },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%)',
       },
     },
   },

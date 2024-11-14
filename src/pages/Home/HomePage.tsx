@@ -5,6 +5,7 @@ import { RecipeList, RecipeListTwo } from "./RecipeList"
 import { Information } from "~/components/commons/Information/Information"
 import { InstagramPost } from "~/components/commons/InstagramPost/InstagramPost"
 import { TittleIns } from "~/components/commons/InstagramPost/TittleIns"
+import { DeliciousnessMail } from "~/components/commons/DeliciousnessMail/DeliciousnessMail"
 
 const postData = [
     {
@@ -43,9 +44,9 @@ export default function HomePage() {
     <Banner/>
     <Category/>
     <RecipeList/>
-    <div className='px-8 mt-12 block'>
+    <div className='px-8 mt-12 block bg-custom-gradient'>
       <TittleIns/>
-      <div className="flex gap-10 font-primary-500">
+      <div className="gap-10 font-primary-500 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-4">
         {postData.map((post, index) => (
           <InstagramPost
             key={index}
@@ -60,5 +61,6 @@ export default function HomePage() {
     </div>
     <Information/>
     <RecipeListTwo/>
+    <DeliciousnessMail/>
   </>
 }
