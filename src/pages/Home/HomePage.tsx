@@ -6,6 +6,7 @@ import { Information } from "~/components/commons/Information/Information"
 import { InstagramPost } from "~/components/commons/InstagramPost/InstagramPost"
 import { TittleIns } from "~/components/commons/InstagramPost/TittleIns"
 import { DeliciousnessMail } from "~/components/commons/DeliciousnessMail/DeliciousnessMail"
+import { Footer } from "~/components/commons/Footer/Footer"
 
 const postData = [
     {
@@ -62,5 +63,6 @@ export default function HomePage() {
     <Information/>
     <RecipeListTwo/>
     <DeliciousnessMail/>
+    <Footer/>
   </>
 }

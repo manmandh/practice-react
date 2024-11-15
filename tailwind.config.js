@@ -18,6 +18,7 @@ module.exports = {
         'transparent-blue': 'rgba(231, 249, 253, 0)',
         'light-blue': '#E7F9FD',
         'bgc-opacity': 'rgba(0, 0, 0, 0.05)',
+        'orange': '#FF7967',
       },
       screens: {
         'custom-900': '900px',
