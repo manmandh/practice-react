@@ -5,4 +5,5 @@ export interface IRecipeCardProps {
   category: string
   timeIcon: string
   categoryIcon: string
+  backgroundColor: boolean
 }

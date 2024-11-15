@@ -1,8 +1,8 @@
 import { IRecipeCardProps } from "~/commons/interfaces/IRecipeCardProps";
 
-const RecipeCard: React.FC<IRecipeCardProps> = ({title, image, time, category, timeIcon, categoryIcon}) =>{
+const RecipeCard: React.FC<IRecipeCardProps> = ({title, image, time, category, timeIcon, categoryIcon, backgroundColor}) =>{
   return (
-    <div className="bg-gradient-to-b from-transparent-blue to-light-blue rounded-[30px]">
+    <div className={`${backgroundColor? 'bg-gradient-to-b from-transparent-blue to-light-blue' : ''} rounded-[30px]`}>
       <img src={image} alt={title} className="w-full h-40 px-4 object-cover rounded-[30px]" />
       <div className="px-4">
         <h3 className="line-clamp-2 text-[24px] font-primary-600 my-4">{title}</h3>
@@ -18,6 +18,7 @@ const RecipeCard: React.FC<IRecipeCardProps> = ({title, image, time, category, t
         </div>
       </div>
     </div>
+
   )
 }
 

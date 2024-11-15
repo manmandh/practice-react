@@ -27,7 +27,7 @@ export default tseslint.config(
         { allowConstantExport: true },
       ],
       'prettier/prettier': [
-      'warn',
+      'off',
       {
         arrowParens: 'always',
         semi: false,
@@ -35,7 +35,7 @@ export default tseslint.config(
         tabWidth: 2,
         endOfLine: 'auto',
         useTabs: false,
-        singleQuote: true,
+        singleQuote: false,
         printWidth: 120,
         jsxSingleQuote: true
       }
