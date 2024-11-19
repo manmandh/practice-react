@@ -38,6 +38,7 @@ const postData = [
       date: "October 12"
     }
 ];
+
 export default function HomePage() {
 
   return <>

@@ -37,8 +37,8 @@ const SocialIcon = ({ iconSrc }: { iconSrc: string }) => {
 const socialMediaIcons = [facebook, twitter, instagram];
 
 export const Header = () => {
-  return (
-    <header className="flex text-[16px] justify-between max-custom-940:flex-col max-custom-940:gap-4  max-custom-900:py-7 pt-[45px] pb-[75px] px-8 bg-white font-primary-500">
+  return <>
+    <header className="flex text-[16px] justify-between max-custom-940:flex-col max-custom-940:gap-4  max-custom-900:py-7 pt-[45px] pb-[50px] px-8 bg-white font-primary-500">
       <div className="flex-shrink-0">
         <img src={logo} alt="logo" className="h-15 w-15" />
       </div>
@@ -55,5 +55,6 @@ export const Header = () => {
         ))}
       </div>
     </header>
-  );
+    <div className='border-t border-gray-300 mb-4'></div>
+  </>
 };
