@@ -26,7 +26,7 @@ const navigationLinks = [
   { href: '/about-us', label: 'About Us' },
 ];
 
-const SocialIcon = ({ iconSrc }: { iconSrc: string }) => {
+export const SocialIcon = ({ iconSrc }: { iconSrc: string }) => {
   return (
     <Link to="#">
       <img src={iconSrc} alt="icon" className="h-6 w-6" />
@@ -34,7 +34,8 @@ const SocialIcon = ({ iconSrc }: { iconSrc: string }) => {
   );
 };
 
-const socialMediaIcons = [facebook, twitter, instagram];
+// eslint-disable-next-line react-refresh/only-export-components
+export const socialMediaIcons = [facebook, twitter, instagram];
 
 export const Header = () => {
   return <>
