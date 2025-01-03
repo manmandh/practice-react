@@ -4,6 +4,7 @@ import chef from '~/assets/images/contact.png';
 import InputField from '~/components/elements/Input/InputField';
 import SelectField from '~/components/elements/SelectField/SelectField';
 
+
 export const ContactForm: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center mx-8 min-h-screen bg-white">
@@ -23,7 +24,7 @@ export const ContactForm: React.FC = () => {
         <form className="w-2/3 max-w-lg space-y-6">
           <div className="grid grid-cols-2 gap-6">
             {/* Name */}
-            <InputField label="Name" type="text" placeholder="Enter your name..." />
+            <InputField label="Name" type="text" placeholder="Enter your name..."  />
 
             {/* Email Address */}
             <InputField label="Email Address" type="email" placeholder="Your email address..." />
